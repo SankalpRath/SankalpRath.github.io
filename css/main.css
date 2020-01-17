@@ -1066,8 +1066,11 @@ button.ui-button {
         font-size: 1.4em;
     }
     .card-c {
-        width: 88vw;
-        height: 110vw;
+        margin: auto;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        width: 72vw;
+        height: 90vw;
     }
     .card__svg {
         top: 90px;
