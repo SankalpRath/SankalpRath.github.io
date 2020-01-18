@@ -450,30 +450,34 @@ ul.social-network li {
 }
 
 a.heading.selected {
-    color: yellow;
+    color: white;
 }
 
 a.heading {
     display: block;
-    font-size: 2em;
-    font-family: 'Girassol', cursive;
+    font-size: 2.5em;
+    font-family: 'Mirza', cursive;
+    font-weight: 700;
     text-decoration: none;
-    color: blue;
+    color: rgb(53, 157, 255);
 }
 
 a.heading:hover {
-    color: yellow;
+    color: white;
     cursor: pointer;
 }
 
 a.title {
-    font-size: 1.2em;
-    color: rgb(0, 199, 90);
+    font-size: 1.5em;
+    color: #00b553;
+    font-weight: 400;
     font-family: 'Josefin Sans', sans-serif;
     display: block;
 }
 
-a.text {}
+div.text {
+    font-size: 1.15em;
+}
 
 
 /*faq content*/
@@ -1059,6 +1063,12 @@ button.ui-button {
     a.heading {
         font-size: 1.7em;
     }
+    a.title {
+        font-size: 1.3em;
+    }
+    div.text {
+        font-size: 1em;
+    }
     .event-card {
         width: 40vh;
         height: 25vh;
@@ -1092,6 +1102,9 @@ button.ui-button {
 }
 
 @media screen and (max-width:480px) {
+    a.title {
+        font-size: 1.2em;
+    }
     .c-item {
         margin-top: 40vh;
     }
