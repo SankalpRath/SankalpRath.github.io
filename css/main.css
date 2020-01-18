@@ -423,7 +423,7 @@ ul.social-network li {
 .nav-brand-text {
     font-family: 'Cinzel Decorative', cursive;
     font-size: 2.5rem;
-    background: linear-gradient(to right, rgb(228, 55, 83) 0%, rgb(33, 18, 250) 70%, #03a81e 100%);
+    background: linear-gradient(to right, rgb(255, 0, 0) 0%, rgb(246, 250, 18) 60%, #03a81e 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -786,6 +786,9 @@ button.ui-button {
 
 /*Contact Us Card Design*/
 
+
+/*previous design*/
+
 .card-c {
     position: relative;
     background: #333;
@@ -876,6 +879,68 @@ button.ui-button {
         opacity: 1;
         filter: blur(0);
     }
+}
+
+
+/* Current Design*/
+
+.card-contact-us {
+    position: relative;
+    background: linear-gradient(65deg, #fdfbfb, #ebedee);
+    margin: auto;
+    width: 36vh;
+    height: 45vh;
+    border-radius: 6px;
+    color: #aaa;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease;
+    overflow: hidden;
+}
+
+.card-contact-us:hover {
+    box-shadow: -0.25rem 0.25rem 0.5rem rgba(255, 255, 255, 0.4);
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+.card-contactus {
+    height: auto;
+    width: 100%;
+}
+
+.card-contactus.image {
+    width: calc(36vh*0.5);
+    height: calc(36vh*0.5);
+    border-radius: 50%;
+    margin-right: 25%;
+    margin-left: 25%;
+    margin-top: 10%;
+    object-fit: cover;
+    text-align: center;
+}
+
+.card-contactus.title {
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    font-size: 1.7em;
+    margin-top: 3%;
+    font-weight: 800;
+    color: black;
+}
+
+.card-contactus.sub-title {
+    font-family: 'Ropa Sans', sans-serif;
+    text-align: center;
+    font-size: 1em;
+    color: #aaa;
+}
+
+.social-network.social-circle.center {
+    text-align: center;
+    margin-top: 10%;
+    display: block;
 }
 
 
