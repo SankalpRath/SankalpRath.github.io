@@ -1148,6 +1148,12 @@ button.ui-button {
     .card__svg {
         top: 90px;
     }
+    .card-contactus.title {
+        font-size: 1.4em;
+    }
+    .card-contactus.sub-title {
+        font-size: 0.8em;
+    }
 }
 
 
