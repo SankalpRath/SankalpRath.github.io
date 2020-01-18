@@ -556,11 +556,13 @@ a.text {}
     /*Event Card Holder*/
     padding: 10% 0%;
     border-radius: 10%;
+    transition: all 0.5s ease;
 }
 
 .event-card-holder:hover {
     background: rgba(0, 0, 0, 0.1);
-    box-shadow: -2px 2px 4px white;
+    transform: translateY(-10px);
+    box-shadow: -2px 2px 4px white, 2px 2px 4px white;
     cursor: pointer;
 }
 
@@ -1131,6 +1133,10 @@ button.ui-button {
         padding-right: 0;
         padding-top: 0;
         padding-bottom: 10%;
+    }
+    .event-card-holder:hover {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+        box-shadow: none;
     }
     .event-header {
         width: 100%;
