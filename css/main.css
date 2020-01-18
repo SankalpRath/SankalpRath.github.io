@@ -699,6 +699,10 @@ a.text {}
     box-shadow: -5vw 5vh 10vh rgba(0, 0, 0, 0.4);
 }
 
+.ui-dialog .ui-dialog-content {
+    padding: 0 1em .5em 1em;
+}
+
 
 /* close icon remove*/
 
