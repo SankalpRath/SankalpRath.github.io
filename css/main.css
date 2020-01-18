@@ -586,12 +586,12 @@ div.text {
     width: 48vh;
     margin-left: auto;
     margin-right: auto;
-    transform: rotateZ(-3deg);
+    transform: rotateZ(-5deg);
     background-color: transparent;
     filter: drop-shadow(-10px 10px 10px rgba(0, 0, 0, 0.884));
 }
 
-.event-card.item1 {
+.event-card .item1 {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -600,7 +600,7 @@ div.text {
     background-color: white;
 }
 
-.event-card.item2 {
+.event-card .item2 {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -609,7 +609,7 @@ div.text {
     background-color: white;
 }
 
-.event-card.item3 {
+.event-card .item3 {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -618,7 +618,7 @@ div.text {
     background-color: white;
 }
 
-.event-card.item4 {
+.event-card .item4 {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -628,19 +628,16 @@ div.text {
     box-shadow: -5px 5px 10px white;
 }
 
-.event-card.item5 {
+.event-card .item5 {
     position: absolute;
     height: 100%;
     width: 100%;
     -webkit-clip-path: polygon(16% 1%, 99.375% 1%, 99.375% 74.5%, 84% 99%, 0.625% 99%, 0.625% 25.5%);
     clip-path: polygon(16% 1%, 99.375% 1%, 99.375% 74.5%, 84% 99%, 0.625% 99%, 0.625% 25.5%);
     background-color: red;
-    background: url('../images/bg.png');
-    object-fit: cover;
-    background-size: contain;
 }
 
-.event-card.item6 {
+.event-card .item6 {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -649,7 +646,7 @@ div.text {
     background-color: white;
 }
 
-.event-card.item7 {
+.event-card .item7 {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -658,7 +655,7 @@ div.text {
     background-color: white;
 }
 
-.event-card.item8 {
+.event-card .item8 {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -667,23 +664,37 @@ div.text {
     background-color: white;
 }
 
-.event-card.item9 {
+.item5 .item9 {
     position: absolute;
+    height: 100%;
+    width: 100%;
     background: red;
     clip-path: polygon(80% 1%, 80% 25%, 85% 20%, 90% 25%, 90% 1%);
 }
 
-.event-card.item10 {
-    position: absolute;
-    width: 10%;
-    height: 25%;
+.item5 .item10 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    padding-right: 10%;
+    padding-left: 80%;
+    padding-bottom: 80%;
+    padding-top: 3%;
     color: white;
-    top: 0;
-    font-size: 0.8em;
+    font-size: 1.3em;
     font-weight: 700;
-    padding-right: 2%;
-    right: 10%;
     line-height: 15px;
+}
+
+.item5 .item-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('../images/bg.png');
+    object-fit: cover;
+    background-size: contain;
 }
 
 .event {
@@ -791,6 +802,25 @@ button.ui-button {
     background: linear-gradient(to left bottom, #0097c6, #00a6d2);
     border: none;
     font-size: 2em;
+}
+
+
+/*dialog paragraphs*/
+
+.para-dlg-1 {
+    font-family: 'Gelasio', serif;
+    padding: 2% 4% 2% 4%;
+}
+
+.para-dlg-2 {
+    padding: 2% 4% 2% 4%;
+    text-indent: 5%;
+    text-align: justify;
+}
+
+.para-dlg-3 {
+    padding: 2% 4% 2% 4%;
+    text-align: justify;
 }
 
 
@@ -951,6 +981,16 @@ button.ui-button {
     text-align: center;
     margin-top: 10%;
     display: block;
+}
+
+.team-title {
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 1em;
+    font-weight: bold;
+    margin-bottom: 1em;
+    font-family: 'Nunito', sans-serif;
 }
 
 
@@ -1172,6 +1212,9 @@ button.ui-button {
     }
     .card-contactus.sub-title {
         font-size: 0.8em;
+    }
+    .team-title {
+        font-size: 1.6em;
     }
 }
 
