@@ -10,9 +10,15 @@ body {
     z-index: 100;
     text-align: center;
     font-size: inherit;
-    background: linear-gradient(to bottom right, rgb(57, 184, 235), rgb(255, 67, 239)) repeat-y;
+    background: linear-gradient(to bottom right, #000428, #004e92) repeat-y;
     width: 100%;
     height: 100%;
+}
+
+#load .text {
+    font-size: 2.5rem;
+    font-family: 'Oswald', sans-serif;
+    color: white;
 }
 
 #contents {
