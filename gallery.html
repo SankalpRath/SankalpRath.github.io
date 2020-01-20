@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/carousel3d.css">
     <link rel="stylesheet" href="css/hover.css">
 </head>
 
@@ -41,16 +42,61 @@
                     <a class="btn-nav raise" href="faqs.html">FAQs</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="btn-nav raise" href="sponsor.html" ">Sponsor</a>
+                    <a class="btn-nav raise" href="sponsor.html">Sponsor</a>
 
                 </li>
-                <li class="nav-item ">
-                    <a class="btn-nav raise " href="contactus.html ">Contact Us </a>
+                <li class="nav-item">
+                    <a class="btn-nav raise" href="contactus.html">Contact Us </a>
                 </li>
             </ul>
         </div>
     </nav>
-    <div style="width: 100%;height: auto;background: linear-gradient(to right bottom,rgb(34, 0, 0),rgb(42, 1, 61));padding: 10vh 5%;min-height: 100vh; ">
+    <div style="width: 100%;height: auto;background: linear-gradient(to right bottom,rgb(34, 0, 0),rgb(42, 1, 61));min-height: 100vh;">
+
+        <div id="carousel-space">
+            <div id="drag-container">
+                <div id="spin-container">
+                    <!-- Add your images (or video) here -->
+                    <img src="images/gallery_images/img1.jpg" alt="">
+                    <img src="images/gallery_images/img3.JPG" alt="">
+                    <img src="images/gallery_images/img4.JPG" alt="">
+                    <img src="images/gallery_images/img5.JPG" alt="">
+                    <img src="images/gallery_images/img6.JPG" alt="">
+                    <img src="images/gallery_images/img2.png" alt="">
+                    <img src="images/gallery_images/img7.JPG" alt="">
+
+                    <!-- Example image with link -->
+                    <a target="_blank" href="https://images.pexels.com/photos/139829/pexels-photo-139829.jpeg">
+                        <img src="https://images.pexels.com/photos/139829/pexels-photo-139829.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                    </a>
+
+                    <!-- Example add video  -->
+                    <!-- <video controls autoplay="autoplay" loop>
+          <source src="https://player.vimeo.com/external/322244668.sd.mp4?s=338c48ac2dfcb1d4c0689968b5baf94eee6ca0c1&profile_id=165&oauth2_token_id=57447761" type="video/mp4">
+        </video> -->
+
+                    <!-- Text at center of ground -->
+                    <div id="t-logo">
+                        <div style="position: absolute;background-image: url('images/tech.png');height: 340px;width: 240px;background-size: contain;background-repeat: no-repeat;"></div>
+                        <div style="position: absolute;background-image: url('images/tech.png');height: 340px;width: 240px;background-size: contain;background-repeat: no-repeat;transform: translateZ(2px);"></div>
+                        <div style="position: absolute;background-image: url('images/tech.png');height: 340px;width: 240px;background-size: contain;background-repeat: no-repeat;transform: translateZ(4px);"></div>
+                        <div style="position: absolute;background-image: url('images/tech.png');height: 340px;width: 240px;background-size: contain;background-repeat: no-repeat;transform: translateZ(6px);"></div>
+                        <div style="position: absolute;background-image: url('images/tech.png');height: 340px;width: 240px;background-size: contain;background-repeat: no-repeat;transform: translateZ(8px);"></div>
+                        <div style="position: absolute;background-image: url('images/tech.png');height: 340px;width: 240px;background-size: contain;background-repeat: no-repeat;transform: translateZ(10px);"></div>
+                        <div style="position: absolute;background-image: url('images/tech.png');height: 340px;width: 240px;background-size: contain;background-repeat: no-repeat;transform: translateZ(12px);"></div>
+                        <div style="position: absolute;background-image: url('images/tech.png');height: 340px;width: 240px;background-size: contain;background-repeat: no-repeat;transform: translateZ(1.1px);"></div>
+                        <div style="position: absolute;background-image: url('images/tech.png');height: 340px;width: 240px;background-size: contain;background-repeat: no-repeat;transform: translateZ(3.3px);"></div>
+                        <div style="position: absolute;background-image: url('images/tech.png');height: 340px;width: 240px;background-size: contain;background-repeat: no-repeat;transform: translateZ(5.5px);"></div>
+                        <div style="position: absolute;background-image: url('images/tech.png');height: 340px;width: 240px;background-size: contain;background-repeat: no-repeat;transform: translateZ(7.7px);"></div>
+                        <div style="position: absolute;background-image: url('images/tech.png');height: 340px;width: 240px;background-size: contain;background-repeat: no-repeat;transform: translateZ(9.9px);"></div>
+                        <div style="position: absolute;background-image: url('images/tech.png');height: 340px;width: 240px;background-size: contain;background-repeat: no-repeat;transform: translateZ(11.11px);"></div>
+
+                    </div>
+
+                </div>
+                <div id="ground"></div>
+            </div>
+        </div>
 
 
 
@@ -58,13 +104,15 @@
 
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js " integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="anonymous "></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js "></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js " integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 " crossorigin="anonymous "></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js " integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin=" anonymous "></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js "></script>
-    <script src="js/wow.min.js "></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/gallery.js"></script>
+
 </body>
 
 </html>
