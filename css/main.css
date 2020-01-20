@@ -499,6 +499,47 @@ div.text {
 }
 
 
+/* Contact Us Page Design*/
+
+.contactus-content-h {
+    padding: 1% 2%;
+}
+
+.contactus-content-h .heading {
+    display: inline-block;
+    font-size: 2.5em;
+    font-weight: 700;
+    padding-bottom: 5px;
+    font-family: 'Audrey';
+    text-decoration: none;
+    color: rgb(53, 157, 255);
+    transition: all 1s ease;
+    clear: both;
+    float: left;
+}
+
+.contactus-content-h .heading:after {
+    content: '';
+    width: 0px;
+    height: 5px;
+    display: block;
+    background: white;
+    transition: 300ms;
+}
+
+.contactus-content-h .heading:hover {
+    color: white;
+}
+
+.contactus-content-h .heading:hover:after {
+    width: 100%;
+}
+
+.contactus-content-h .heading.selected:after {
+    width: 100%;
+}
+
+
 /* Event Card design*/
 
 .event-header {
@@ -1128,6 +1169,23 @@ button.ui-button {
         width: 40vh;
         height: 25vh;
     }
+    .social-circle li a {
+        width: 35px;
+        height: 35px;
+        font-size: 22px;
+    }
+    .contactus-content-h .heading {
+        font-size: 2em;
+    }
+    /*card contacts*/
+    .card-contact-us {
+        height: 42vh;
+        width: 32vh;
+    }
+    .card-contactus.image {
+        height: calc(32vh*0.5);
+        width: calc(32vh*0.5);
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -1153,6 +1211,9 @@ button.ui-button {
     }
     a.heading {
         font-size: 1.4em;
+    }
+    .contactus-content-h .heading {
+        font-size: 1.5em;
     }
 }
 
@@ -1230,6 +1291,33 @@ button.ui-button {
     }
     .team-title {
         font-size: 1.6em;
+    }
+    .card-contact-us {
+        height: 41vh;
+        width: 30vh;
+    }
+    .card-contactus.image {
+        height: calc(30vh*0.5);
+        width: calc(30vh*0.5);
+    }
+    .contactus-content-h .heading {
+        display: block;
+        padding: 2px 2px 2px 2px;
+        margin-bottom: 4px;
+        text-align: center;
+        border-radius: 20px;
+        transition: all 1s ease;
+        text-underline-position: under;
+        float: none;
+    }
+    .contactus-content-h .heading.selected {
+        transform: scale(1.25, 1.05);
+    }
+    .contactus-content-h .heading:hover {
+        transform: scale(1.25, 1.05);
+    }
+    .contactus-content-h .heading:after {
+        content: none;
     }
 }
 

@@ -2,3 +2,8 @@
     font-family: 'font1';
     src: url('fonts/font1.ttf');
 }
+
+@font-face {
+    font-family: 'Audrey';
+    src: url('fonts/Audrey-Medium.otf');
+}
