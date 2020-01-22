@@ -1301,14 +1301,14 @@ button.ui-button {
         width: calc(30vh*0.5);
     }
     .contactus-content-h .heading {
-        display: block;
+        display: inline-block;
         padding: 2px 2px 2px 2px;
         margin-bottom: 4px;
         text-align: center;
         border-radius: 20px;
         transition: all 1s ease;
         text-underline-position: under;
-        float: none;
+       
     }
     .contactus-content-h .heading.selected {
         transform: scale(1.25, 1.05);
