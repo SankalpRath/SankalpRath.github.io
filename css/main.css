@@ -1300,22 +1300,31 @@ button.ui-button {
         height: calc(30vh*0.5);
         width: calc(30vh*0.5);
     }
+    .contactus-content-h{
+        white-space: nowrap;
+        overflow: auto;
+        float: unset;
+        margin-left: -10%;
+        width: 120%;
+    }
     .contactus-content-h .heading {
         display: inline-block;
-        padding: 2px 2px 2px 2px;
+        padding: 2% 3%;
+        background: transparent;
         margin-bottom: 4px;
         text-align: center;
-        border-radius: 20px;
+        
         transition: all 1s ease;
         text-underline-position: under;
+        float:none;
        
     }
-    .contactus-content-h .heading.selected {
+    /* .contactus-content-h .heading.selected {
         transform: scale(1.25, 1.05);
     }
     .contactus-content-h .heading:hover {
         transform: scale(1.25, 1.05);
-    }
+    } */
     .contactus-content-h .heading:after {
         content: none;
     }
