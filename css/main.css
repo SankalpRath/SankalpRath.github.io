@@ -1049,6 +1049,17 @@ button.ui-button {
     font-family: 'Nunito', sans-serif;
 }
 
+.team-header{
+    font-family: 'Bevan', cursive;
+    color: rgb(3, 0, 161);
+    font-size: 3em;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    letter-spacing: 7px;
+    text-shadow: -2px 2px 4px white;
+}
+
 
 /*.logo:hover {
         visibility: hidden;
@@ -1329,6 +1340,9 @@ button.ui-button {
  
     .contactus-content-h .heading:after {
         content: none;
+    }
+    .team-header{
+        font-size: 2.4em;
     }
 }
 

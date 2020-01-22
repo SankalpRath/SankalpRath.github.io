@@ -11,16 +11,17 @@ $('.heading').click(function () {
     //TEST BLOCK
 
 
-    var frames = document.getElementsByClassName('contactus-content-h');
-    console.log($('.contactus-content-h').scrollLeft());
+    // console.log($('.contactus-content-h').scrollLeft());
 
     $('.contactus-content-h').animate({
-        scrollLeft: ($('.contactus-content-h').scrollLeft() + $(this).position().left) - 20
+        scrollLeft: ($('.contactus-content-h').scrollLeft() + $(this).position().left + 30) - (($(window).width() - $(this).width()) / 2)
     }, 700);
 
-    console.log("To scroll:" + ($('.contactus-content-h').scrollLeft() + $(this).position().left));
-    console.log("this offset left :" + $(this).offset().left);
-    console.log("this position left :" + $(this).position().left);
+    // console.log("To scroll:" + ($('.contactus-content-h').scrollLeft() + $(this).position().left));
+    // console.log($('.contactus-content-h').width());
+    // console.log("browser width:" + $(window).width());
+    // console.log("this offset left :" + $(this).offset().left);
+    // console.log("this position left :" + $(this).position().left);
 
 
     //TEST BLOCK END
@@ -31,9 +32,6 @@ $('.heading').click(function () {
     $($prev_content_id).addClass('fadeOut');
     $($prev_content_id).addClass('d-none');
     $($prev_content_id).removeClass('d-block');
-
-
-
 
     //show current element
     $($content_id).removeClass('d-none');
