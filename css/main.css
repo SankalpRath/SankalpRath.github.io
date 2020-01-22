@@ -1302,7 +1302,8 @@ button.ui-button {
     }
     .contactus-content-h{
         white-space: nowrap;
-        overflow: auto;
+        overflow-x: scroll;
+        display: flex;
         float: unset;
         margin-left: -10%;
         width: 120%;
@@ -1314,17 +1315,18 @@ button.ui-button {
         margin-bottom: 4px;
         text-align: center;
         
-        transition: all 1s ease;
+        transition: all 0.5s ease-out;
         text-underline-position: under;
         float:none;
        
     }
-    /* .contactus-content-h .heading.selected {
-        transform: scale(1.25, 1.05);
+        .contactus-content-h .heading:hover {
+       background: rgba(121, 121, 121, 0.1);
     }
-    .contactus-content-h .heading:hover {
-        transform: scale(1.25, 1.05);
+     /* .contactus-content-h .heading.selected {
+      
     } */
+ 
     .contactus-content-h .heading:after {
         content: none;
     }

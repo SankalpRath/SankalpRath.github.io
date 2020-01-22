@@ -10,9 +10,17 @@ $('.heading').click(function () {
     console.log($content_id);
     //TEST BLOCK
 
-    console.log($(this).position().left);
-    $(this).css({ "margin-left": 0 });
-    console.log($(this).position().left);
+
+    var frames = document.getElementsByClassName('contactus-content-h');
+    console.log($('.contactus-content-h').scrollLeft());
+
+    $('.contactus-content-h').animate({
+        scrollLeft: ($('.contactus-content-h').scrollLeft() + $(this).position().left) - 20
+    }, 700);
+
+    console.log("To scroll:" + ($('.contactus-content-h').scrollLeft() + $(this).position().left));
+    console.log("this offset left :" + $(this).offset().left);
+    console.log("this position left :" + $(this).position().left);
 
 
     //TEST BLOCK END
@@ -21,15 +29,15 @@ $('.heading').click(function () {
     //hide previous data
     $($prev_content_id).removeClass('fadeInRight');
     $($prev_content_id).addClass('fadeOut');
-    // $($prev_content_id).addClass('d-none');
-    // $($prev_content_id).removeClass('d-block');
+    $($prev_content_id).addClass('d-none');
+    $($prev_content_id).removeClass('d-block');
 
 
 
 
     //show current element
-    // $($content_id).removeClass('d-none');
-    // $($content_id).addClass('d-block');
+    $($content_id).removeClass('d-none');
+    $($content_id).addClass('d-block');
     $($content_id).removeClass('fadeOut');
     $($content_id).addClass('fadeInRight');
 
