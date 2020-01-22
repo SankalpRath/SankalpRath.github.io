@@ -13,7 +13,6 @@ Audio does not work on iOS Safari.
     position: absolute;
     height: 100%;
     width: 100%;
-    margin-top: 3em;
     font-size: 4em;
     color: white;
     display: block;
@@ -23,7 +22,7 @@ Audio does not work on iOS Safari.
     left: 0;
     right: 0;
     bottom: 0;
-    margin: auto auto;
+    padding-top: 2em;
     line-height: 200px;
     text-align: center;
 }
@@ -34,35 +33,49 @@ Audio does not work on iOS Safari.
 @media screen and (max-width: 700px)
 {
     .message-s{
-           margin-top: 3em;
     font-size: 3em;
     }
     
 .flip-clock-wrapper {
-    width: 100%;
+    width: 90%;
 }
 .flip-clock-wrapper ul{
-    width:35px;
-    height: 45px;
+    width:30px;
+    height: 35px;
 }
 .flip-clock-divider{
     height: 50px;
     width:10px;
 }
 .flip-clock-wrapper ul li{
-    line-height: 50px;
+    line-height: 40px;
 }
 .flip-clock-wrapper ul li a div div.inn{
-    font-size: 30px;
+    font-size: 25px;
 }
 /* .flip-clock-divider.minutes .flip-clock-label{
     right: -20px;
 } */
 .flip-clock-dot {
     left: 0;
+    height: 7px;
+    width: 7px;
 }
-/* .flip-clock-divider .flip-clock-label{
-    color: #fb00ff;
-} */
+ .flip-clock-divider .flip-clock-label{
+   right: -60px;
+} 
+.flip-clock-divider.minutes .flip-clock-label{
+    right: -60px;
+}
+.flip-clock-divider.seconds .flip-clock-label
+{
+    right: -60px;
+}
 
+}
+@media screen and (max-width:360px)
+{
+    .flip-clock-wrapper {
+    width: 100%;
+}
 }
