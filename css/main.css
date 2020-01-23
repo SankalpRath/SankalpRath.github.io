@@ -378,17 +378,17 @@ a {
 
 .rotate360deg {
     color: #595959;
-    animation: rotate360 1s ease-in;
+    animation: rotate720 1s ease-in;
 }
 
-@keyframes rotate360 {
+@keyframes rotate720 {
     0% {
         transform: rotate(0deg);
         background: #3B5998;
         color: white;
     }
     100% {
-        transform: rotate(360deg);
+        transform: rotate(720deg);
         /* background: white; */
         color: #595959;
     }
@@ -396,12 +396,12 @@ a {
 
 .anti-rotate360deg {
     color: #595959;
-    animation: rotate360 1s ease-in;
+    animation: rotate720 1s ease-in;
 }
 
-@keyframes anti-rotate360 {
+@keyframes anti-rotate720 {
     0% {
-        transform: rotate(360deg);
+        transform: rotate(720deg);
         background: #3B5998;
         color: white;
     }
@@ -551,7 +551,7 @@ div.text {
 
 .contactus-content-h .heading {
     display: inline-block;
-    font-size: 2.5em;
+    font-size: 2em;
     font-weight: 700;
     padding-bottom: 5px;
     font-family: 'Audrey';
@@ -1064,7 +1064,7 @@ button.ui-button {
 .card-contactus.title {
     font-family: 'Josefin Sans', sans-serif;
     text-align: center;
-    font-size: 1.7em;
+    font-size: 1.45em;
     margin-top: 3%;
     font-weight: 800;
     color: black;
@@ -1382,6 +1382,12 @@ button.ui-button {
     .contactus-content-h .heading {
         font-size: 2em;
     }
+    .card-contactus.title {
+        font-size: 1.3em;
+    }
+    .card-contactus.sub-title {
+        font-size: 0.8em;
+    }
     /*card contacts*/
     .card-contact-us {
         height: 40vh;
@@ -1489,10 +1495,10 @@ button.ui-button {
         top: 90px;
     }
     .card-contactus.title {
-        font-size: 1.4em;
+        font-size: 1.1em;
     }
     .card-contactus.sub-title {
-        font-size: 0.8em;
+        font-size: 0.65em;
     }
     .team-title {
         font-size: 1.6em;

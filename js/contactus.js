@@ -39,16 +39,11 @@ $('.heading').click(function() {
 
 
     $("a.icoFacebook").each(function() {
-        // console.log($(this).hover(function() { $(this).append("yash"); }));
         $(this).toggleClass('rotate360deg');
         $(this).toggleClass('anti-rotate360deg');
-        //  $(this).transit({ rotate: '360deg' }, 1000); //.css({ "transform": "rotate(160deg)" });
-        console.log($(this).attr('class'));
+        // console.log($(this).attr('class'));
     });
 
-
-    /* $($content_id).toggleClass('fadeOut');
-     $($content_id).toggleClass('fadeInLeft');*/
 
     //console.log($($content_id).attr('class'));
 });
