@@ -28,14 +28,14 @@ $('.heading').click(function() {
     //console.log($('.d-block').attr('id'));
 
     //hide previous data
-    $($prev_content_id).removeClass('tilt-in-bl');
+    $(".card-contact-us").removeClass('tilt-in-bl');
     $($prev_content_id).addClass('d-none');
     $($prev_content_id).removeClass('d-block');
 
     //show current element
     $($content_id).removeClass('d-none');
     $($content_id).addClass('d-block');
-    $($content_id).addClass('tilt-in-bl');
+    $(".card-contact-us").addClass('tilt-in-bl');
 
 
     $("a.icoFacebook").each(function() {

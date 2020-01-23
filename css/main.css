@@ -1535,7 +1535,7 @@ button.ui-button {
     }
     .contactus-content-h .heading {
         display: inline-block;
-        padding: 2% 3%;
+        padding: 10px 15px;
         background: transparent;
         margin-bottom: 4px;
         text-align: center;
