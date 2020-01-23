@@ -28,16 +28,14 @@ $('.heading').click(function () {
     //console.log($('.d-block').attr('id'));
 
     //hide previous data
-    $($prev_content_id).removeClass('fadeInRight');
-    $($prev_content_id).addClass('fadeOut');
+    $($prev_content_id).removeClass('slit-in-diagonal-2');
     $($prev_content_id).addClass('d-none');
     $($prev_content_id).removeClass('d-block');
 
     //show current element
     $($content_id).removeClass('d-none');
     $($content_id).addClass('d-block');
-    $($content_id).removeClass('fadeOut');
-    $($content_id).addClass('fadeInRight');
+    $($content_id).addClass('slit-in-diagonal-2');
 
     /* $($content_id).toggleClass('fadeOut');
      $($content_id).toggleClass('fadeInLeft');*/

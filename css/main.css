@@ -984,7 +984,7 @@ button.ui-button {
     position: relative;
     background: linear-gradient(65deg, #fdfbfb, #ebedee);
     margin: auto;
-    width: 36vh;
+    width: 32vh;
     height: 45vh;
     border-radius: 6px;
     color: #aaa;
@@ -1007,11 +1007,11 @@ button.ui-button {
 }
 
 .card-contactus.image {
-    width: calc(36vh*0.5);
-    height: calc(36vh*0.5);
+    width: calc(32vh*0.6);
+    height: calc(32vh*0.6);
     border-radius: 50%;
-    margin-right: 25%;
-    margin-left: 25%;
+    margin-right: 20%;
+    margin-left: 20%;
     margin-top: 10%;
     object-fit: cover;
     text-align: center;
@@ -1061,6 +1061,74 @@ button.ui-button {
 }
 
 
+
+
+
+/* animations */
+
+
+/**
+ * ----------------------------------------
+ * animation slit-in-diagonal-2
+ * ----------------------------------------
+ */
+.slit-in-diagonal-2 {
+	-webkit-animation: slit-in-diagonal-2 0.45s ease-out both;
+	        animation: slit-in-diagonal-2 0.45s ease-out both;
+}
+
+
+@-webkit-keyframes slit-in-diagonal-2 {
+  0% {
+    -webkit-transform: translateZ(-800px) rotate3d(-1, 1, 0, -90deg);
+            transform: translateZ(-800px) rotate3d(-1, 1, 0, -90deg);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  54% {
+    -webkit-transform: translateZ(-160px) rotate3d(-1, 1, 0, -87deg);
+            transform: translateZ(-160px) rotate3d(-1, 1, 0, -87deg);
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateZ(0) rotate3d(-1, 1, 0, 0);
+            transform: translateZ(0) rotate3d(-1, 1, 0, 0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+@keyframes slit-in-diagonal-2 {
+  0% {
+    -webkit-transform: translateZ(-800px) rotate3d(-1, 1, 0, -90deg);
+            transform: translateZ(-800px) rotate3d(-1, 1, 0, -90deg);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  54% {
+    -webkit-transform: translateZ(-160px) rotate3d(-1, 1, 0, -87deg);
+            transform: translateZ(-160px) rotate3d(-1, 1, 0, -87deg);
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateZ(0) rotate3d(-1, 1, 0, 0);
+            transform: translateZ(0) rotate3d(-1, 1, 0, 0);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+
+
+
+
+
+
+/* ------------------------------------animation end ---------------------------------------------------------- */
 /*.logo:hover {
         visibility: hidden;
     }*/
@@ -1190,12 +1258,12 @@ button.ui-button {
     }
     /*card contacts*/
     .card-contact-us {
-        height: 42vh;
-        width: 32vh;
+        height: 40vh;
+        width: 30vh;
     }
     .card-contactus.image {
-        height: calc(32vh*0.5);
-        width: calc(32vh*0.5);
+        height: calc(30vh*0.6);
+        width: calc(30vh*0.6);
     }
 }
 
@@ -1308,8 +1376,8 @@ button.ui-button {
         width: 30vh;
     }
     .card-contactus.image {
-        height: calc(30vh*0.5);
-        width: calc(30vh*0.5);
+        height: calc(30vh*0.6);
+        width: calc(30vh*0.6);
     }
     .contactus-content-h{
         white-space: nowrap;
