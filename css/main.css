@@ -352,7 +352,7 @@ ul.social-network li {
 }
 
 .social-circle i {
-    color: #595959;
+    /* color: #595959; */
     -webkit-transition: all 0.8s;
     -moz-transition: all 0.8s;
     -o-transition: all 0.8s;
@@ -369,8 +369,16 @@ ul.social-network li {
     font-size: 1.4em;
 }
 
+
+/*    --------------  small animation ---------------*/
+
+a {
+    color: white;
+}
+
 .rotate360deg {
-    animation: rotate360 1s ease;
+    color: #595959;
+    animation: rotate360 1s ease-in;
 }
 
 @keyframes rotate360 {
@@ -382,11 +390,13 @@ ul.social-network li {
     100% {
         transform: rotate(360deg);
         /* background: white; */
+        color: #595959;
     }
 }
 
 .anti-rotate360deg {
-    animation: rotate360 1s ease;
+    color: #595959;
+    animation: rotate360 1s ease-in;
 }
 
 @keyframes anti-rotate360 {
@@ -398,6 +408,7 @@ ul.social-network li {
     100% {
         transform: rotate(0deg);
         /* background: white; */
+        color: #595959;
     }
 }
 
