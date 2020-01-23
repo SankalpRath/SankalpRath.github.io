@@ -1,4 +1,4 @@
-$('.heading').click(function () {
+$('.heading').click(function() {
     if ($(this).hasClass('selected')) return;
 
     $prev_content_id = "#" + $('.selected').attr('id') + '-b';
@@ -28,14 +28,24 @@ $('.heading').click(function () {
     //console.log($('.d-block').attr('id'));
 
     //hide previous data
-    $($prev_content_id).removeClass('slit-in-diagonal-2');
+    $($prev_content_id).removeClass('tilt-in-bl');
     $($prev_content_id).addClass('d-none');
     $($prev_content_id).removeClass('d-block');
 
     //show current element
     $($content_id).removeClass('d-none');
     $($content_id).addClass('d-block');
-    $($content_id).addClass('slit-in-diagonal-2');
+    $($content_id).addClass('tilt-in-bl');
+
+
+    $("a.icoFacebook").each(function() {
+        // console.log($(this).hover(function() { $(this).append("yash"); }));
+        $(this).toggleClass('rotate360deg');
+        $(this).toggleClass('anti-rotate360deg');
+        //  $(this).transit({ rotate: '360deg' }, 1000); //.css({ "transform": "rotate(160deg)" });
+        console.log($(this).attr('class'));
+    });
+
 
     /* $($content_id).toggleClass('fadeOut');
      $($content_id).toggleClass('fadeInLeft');*/
@@ -43,7 +53,17 @@ $('.heading').click(function () {
     //console.log($($content_id).attr('class'));
 });
 
-$(document).ready(function () {
+$(function() {
+    $("a.icoFacebook").each(function() {
+        $(this).toggleClass('anti-rotate360deg');
+    });
+
+
+});
+
+
+
+$(document).ready(function() {
     if ($(document).scrollTop() > (window.innerHeight * 0.15)) { // check if user scrolled more than 50 from top of the browser window
         $(".navbar").addClass("bg-info-1");
         $(".navbar").removeClass("bg-transparent"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
@@ -53,7 +73,7 @@ $(document).ready(function () {
     }
 
 
-    $(window).scroll(function () { // check if scroll event happened
+    $(window).scroll(function() { // check if scroll event happened
         //console.log("on scroll " + window.innerHeight + "/" + $(document).scrollTop() + " " + ($(document).scrollTop() > window.innerHeight));
         if ($(document).scrollTop() > (window.innerHeight * 0.15)) { // check if user scrolled more than 50 from top of the browser window
             $(".navbar").addClass("bg-info-1");
