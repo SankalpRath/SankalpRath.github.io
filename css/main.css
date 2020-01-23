@@ -332,6 +332,10 @@ ul.social-network li {
     font-size: 32px;
 }
 
+.social-circle li a.grey {
+    color: #595959;
+}
+
 .social-circle li i {
     margin: 0;
     line-height: 30px;
@@ -378,17 +382,17 @@ a {
 
 .rotate360deg {
     color: #595959;
-    animation: rotate720 1s ease-in;
+    animation: rotate360 0.7s ease-in;
 }
 
-@keyframes rotate720 {
+@keyframes rotate360 {
     0% {
         transform: rotate(0deg);
         background: #3B5998;
         color: white;
     }
     100% {
-        transform: rotate(720deg);
+        transform: rotate(360deg);
         /* background: white; */
         color: #595959;
     }
@@ -396,12 +400,12 @@ a {
 
 .anti-rotate360deg {
     color: #595959;
-    animation: rotate720 1s ease-in;
+    animation: rotate360 0.7s ease-in;
 }
 
-@keyframes anti-rotate720 {
+@keyframes anti-rotate360 {
     0% {
-        transform: rotate(720deg);
+        transform: rotate(360deg);
         background: #3B5998;
         color: white;
     }
