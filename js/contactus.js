@@ -1,3 +1,12 @@
+$(window).on("load", function() {
+    console.log("loading finished");
+    setTimeout(function() {
+        $("#contents").fadeIn();
+        $("#load").fadeOut();
+    }, 1000);
+
+});
+
 $('.heading').click(function() {
     if ($(this).hasClass('selected')) return;
     //retriving ids

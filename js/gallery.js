@@ -1,3 +1,12 @@
+$(window).on("load", function() {
+    console.log("loading finished");
+    setTimeout(function() {
+        $("#contents").fadeIn();
+        $("#load").fadeOut();
+    }, 1000);
+
+});
+
 // You can change global variables here:
 var radius = 240 * 2; // how big of the radius
 var autoRotate = true; // auto rotate or not
