@@ -48,6 +48,7 @@ $('.event-header-rbtn').click(function() {
 $(function() {
     $(".dlg").dialog({
         autoOpen: false,
+        resizable: false,
         hide: "explode",
         show: "explode",
         buttons: [{
