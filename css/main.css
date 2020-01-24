@@ -1437,6 +1437,20 @@ button.ui-button {
 /* ------------------------------------animation end ---------------------------------------------------------- */
 
 
+/* ---------------- Gallery Dynamic -----------------*/
+
+#carousel-space.display-3d {
+    display: -webkit-box;
+}
+
+#carousel-space.display-2d {
+    display: none;
+}
+
+
+/* -------------------- End --------------------------------*/
+
+
 /* custom scroll bar */
 
 .ui-widget-content::-webkit-scrollbar {
@@ -1638,6 +1652,12 @@ button.ui-button {
     }
     .contactus-content-h .heading {
         font-size: 1.5em;
+    }
+    #carousel-space.display-3d {
+        display: none;
+    }
+    #carousel-space.display-2d {
+        display: -webkit-box;
     }
 }
 
