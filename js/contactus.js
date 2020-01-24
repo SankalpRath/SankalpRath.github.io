@@ -1,41 +1,30 @@
 $('.heading').click(function() {
     if ($(this).hasClass('selected')) return;
-
+    //retriving ids
     $prev_content_id = "#" + $('.selected').attr('id') + '-b';
     $content_id = "#" + $(this).attr('id') + "-b";
 
-
+    //selecting header
     $('.selected').removeClass('selected');
     $(this).addClass('selected');
-    console.log($content_id);
+    //console.log($content_id);
     //TEST BLOCK
-
-
-    // console.log($('.contactus-content-h').scrollLeft());
 
     $('.contactus-content-h').animate({
         scrollLeft: ($('.contactus-content-h').scrollLeft() + $(this).position().left + 30) - (($(window).width() - $(this).width()) / 2)
     }, 700);
 
-    // console.log("To scroll:" + ($('.contactus-content-h').scrollLeft() + $(this).position().left));
-    // console.log($('.contactus-content-h').width());
-    // console.log("browser width:" + $(window).width());
-    // console.log("this offset left :" + $(this).offset().left);
-    // console.log("this position left :" + $(this).position().left);
-
 
     //TEST BLOCK END
-    //console.log($('.d-block').attr('id'));
-
     //hide previous data
-    $(".card-contact-us").removeClass('slide-in-elliptic-bottom-fwd');
+    $(".card-contact-us").removeClass('bounce-in-fwd');
     $($prev_content_id).addClass('d-none');
     $($prev_content_id).removeClass('d-block');
 
     //show current element
     $($content_id).removeClass('d-none');
     $($content_id).addClass('d-block');
-    $(".card-contact-us").addClass('slide-in-elliptic-bottom-fwd');
+    $(".card-contact-us").addClass('bounce-in-fwd');
 
 
     $("a.icoFacebook").each(function() {
@@ -48,11 +37,11 @@ $('.heading').click(function() {
     //console.log($($content_id).attr('class'));
 });
 
+//roate animation on load (social links)
 $(function() {
     $("a.icoFacebook").each(function() {
         $(this).toggleClass('anti-rotate360deg');
     });
-
 
 });
 

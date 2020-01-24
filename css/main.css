@@ -327,9 +327,9 @@ ul.social-network li {
     -webkit-border-radius: 50%;
     border-radius: 50%;
     text-align: center;
-    width: 50px;
-    height: 50px;
-    font-size: 32px;
+    width: 45px;
+    height: 45px;
+    font-size: 28px;
 }
 
 .social-circle li a.grey {
@@ -505,7 +505,7 @@ a {
     transition-timing-function: ease-out;
 }
 
-a.heading.selected {
+.faq-content-h .heading.selected {
     color: white;
 }
 
@@ -581,6 +581,10 @@ div.text {
 
 .contactus-content-h .heading:hover:after {
     width: 100%;
+}
+
+.contactus-content-h .heading.selected {
+    color: white;
 }
 
 .contactus-content-h .heading.selected:after {
@@ -1045,7 +1049,7 @@ button.ui-button {
 
 .card-contact-us:hover {
     box-shadow: -0.25rem 0.25rem 0.5rem rgba(255, 255, 255, 0.4);
-    transform: translateY(-10px);
+    transform: translateY(-10px) scale(1);
     cursor: pointer;
 }
 
@@ -1306,6 +1310,130 @@ button.ui-button {
 }
 
 
+/**
+ * ----------------------------------------
+ * animation bounce-in-fwd
+ * ----------------------------------------
+ */
+
+.bounce-in-fwd {
+    -webkit-animation: bounce-in-fwd 1.1s both;
+    animation: bounce-in-fwd 1.1s both;
+    animation-fill-mode: none;
+}
+
+.bounce-in-fwd:hover {
+    transform: translateY(-10px) scale(1);
+    transition: transform 1s ease;
+}
+
+@-webkit-keyframes bounce-in-fwd {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+    38% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+        opacity: 1;
+    }
+    55% {
+        -webkit-transform: scale(0.7);
+        transform: scale(0.7);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    72% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+    81% {
+        -webkit-transform: scale(0.84);
+        transform: scale(0.84);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    89% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+    95% {
+        -webkit-transform: scale(0.95);
+        transform: scale(0.95);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+}
+
+@keyframes bounce-in-fwd {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+    38% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+        opacity: 1;
+    }
+    55% {
+        -webkit-transform: scale(0.7);
+        transform: scale(0.7);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    72% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+    81% {
+        -webkit-transform: scale(0.84);
+        transform: scale(0.84);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    89% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+    95% {
+        -webkit-transform: scale(0.95);
+        transform: scale(0.95);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+}
+
+
 /* ------------------------------------animation end ---------------------------------------------------------- */
 
 
@@ -1472,10 +1600,10 @@ button.ui-button {
     .copy {
         font-size: 0.8em;
     }
-    .social-circle li a {
-        width: 30px;
-        height: 30px;
-        font-size: 15px;
+    .card-contact-us .social-circle li a {
+        width: 40px;
+        height: 40px;
+        font-size: 25px;
     }
     a.heading {
         font-size: 1.4em;
@@ -1590,11 +1718,11 @@ button.ui-button {
         float: none;
     }
     .contactus-content-h .heading:hover {
-        background: linear-gradient(to top, white 0%, rgba(255, 255, 255, 0.3) 10%, transparent);
+        background: linear-gradient(to top, white 0%, white 5%, rgba(255, 255, 255, 0.2) 7%, transparent 80%);
     }
-    /* .contactus-content-h .heading.selected {
-      
-    } */
+    .contactus-content-h .heading.selected {
+        background: linear-gradient(to top, white 0%, white 5%, rgba(255, 255, 255, 0.2) 7%, transparent 80%);
+    }
     .contactus-content-h .heading:after {
         content: none;
     }
