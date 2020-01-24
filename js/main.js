@@ -1,4 +1,4 @@
-$(window).bind("load", function() {
+$(window).on("load", function() {
     console.log("loading finished");
     $("#load").fadeOut();
     $("#contents").fadeIn();
