@@ -6,15 +6,16 @@
     color: white;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 800;
-    /* text-transform: uppercase; */
+    text-transform: uppercase;
     background-position: 0 0;
     background-repeat: repeat-x;
     background-size: 750px 100%;
-    background-image: linear-gradient(150deg, rgb(126, 126, 233), white, rgb(22, 252, 22), rgb(126, 126, 233), white, rgb(22, 252, 22) 104%);
+    /* background-image: linear-gradient(150deg, rgb(126, 126, 233), white, rgb(22, 252, 22), rgb(126, 126, 233), white, rgb(22, 252, 22) 104%); */
+    background-image: linear-gradient(120deg, green 49%, #ffffff9c 49%, #ffffff8f 50%, green 50%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    /* animation: live-bg-text 8s linear infinite; */
+    animation: live-bg-text 4s linear infinite;
 }
 
 .sponsor-container {
@@ -36,14 +37,14 @@
 
 @keyframes live-bg-text {
     0% {
-        /* background-position: 0 0; */
-        filter: drop-shadow(0 0 2px white);
+        background-position: 0 0;
+        /* filter: drop-shadow(0 0 2px white); */
     }
-    50% {
+    /* 50% {
         filter: drop-shadow( 0 0 0 white);
-    }
+    } */
     100% {
-        /* background-position: 750px 0; */
-        filter: drop-shadow( 0 0 2px white);
+        background-position: 750px 0;
+        /* filter: drop-shadow( 0 0 2px white); */
     }
 }
