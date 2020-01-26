@@ -1,0 +1,49 @@
+.sponsors-heading-brand {
+    padding: 2em 3em;
+    text-align: center;
+    width: 100%;
+    font-size: 3em;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 800;
+    /* text-transform: uppercase; */
+    background-position: 0 0;
+    background-repeat: repeat-x;
+    background-size: 750px 100%;
+    background-image: linear-gradient(150deg, rgb(126, 126, 233), white, rgb(22, 252, 22), rgb(126, 126, 233), white, rgb(22, 252, 22) 104%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* animation: live-bg-text 8s linear infinite; */
+}
+
+.sponsor-container {
+    position: relative;
+}
+
+.sponsor-name {
+    font-size: 2em;
+    color: white;
+    font-weight: 700;
+    font-family: 'product sans bold';
+    text-align: center;
+    padding: 5px 2px 2px 2px;
+}
+
+.sponsor-image {
+    width: 100%;
+}
+
+@keyframes live-bg-text {
+    0% {
+        /* background-position: 0 0; */
+        filter: drop-shadow(0 0 2px white);
+    }
+    50% {
+        filter: drop-shadow( 0 0 0 white);
+    }
+    100% {
+        /* background-position: 750px 0; */
+        filter: drop-shadow( 0 0 2px white);
+    }
+}

@@ -38,7 +38,8 @@ body {
     font-weight: 700;
 }
 
-.dev.content {}
+
+/* .dev.content {} */
 
 .bg-info-1 {
     background: rgb(10, 10, 10);
@@ -554,11 +555,12 @@ div.text {
 }
 
 .contactus-content-h .heading {
-    display: inline-block;
+    display: block;
     font-size: 2em;
     font-weight: 700;
     padding-bottom: 5px;
-    font-family: 'Audrey';
+    /* font-family: 'Audrey'; */
+    font-family: 'Mirza', cursive;
     text-decoration: none;
     color: rgb(53, 157, 255);
     transition: all 1s ease;
@@ -674,9 +676,10 @@ div.text {
 .event-card-title {
     margin-top: 2em;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    font-family: 'Righteous', cursive;
+    font-family: 'Lobster Two', cursive;
+    font-weight: 700;
+    letter-spacing: 2px;
     font-size: 2em;
     text-shadow: -4px 4px 10px rgba(0, 0, 0, 0.884);
 }
@@ -1071,10 +1074,11 @@ button.ui-button {
 
 .card-contactus.title {
     font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Concert One', cursive;
     text-align: center;
     font-size: 1.45em;
     margin-top: 3%;
-    font-weight: 800;
+    font-weight: 500;
     color: black;
 }
 
@@ -1090,6 +1094,10 @@ button.ui-button {
 }
 
 .social-network.social-circle.center {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
     text-align: center;
     margin-top: 10%;
     display: block;
@@ -1107,17 +1115,33 @@ button.ui-button {
 
 .team-header {
     font-family: 'Bevan', cursive;
-    color: rgb(3, 0, 161);
+    /* color: rgb(3, 0, 161); */
     font-size: 3em;
     text-align: center;
     margin-top: 1em;
     margin-bottom: 1em;
     letter-spacing: 7px;
-    text-shadow: -2px 2px 4px white;
+    /* text-shadow: -2px 2px 4px white; */
+    background-image: linear-gradient(130deg, white 10%, #ffeb3b 30%, #ffeb3b 70%, white 90%);
+    background-position: 0 0;
+    background-size: 500px 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: team-live-text 6s linear infinite;
 }
 
 
 /* animations */
+
+@keyframes team-live-text {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 500px 0;
+    }
+}
 
 
 /**
@@ -1467,6 +1491,7 @@ button.ui-button {
 
 .ui-widget-content::-webkit-scrollbar-track:hover {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     background-color: #F5F5F5;
 }
 
@@ -1583,6 +1608,15 @@ button.ui-button {
 
 
 /*Media*/
+
+@media screen and (max-width:1366px) {
+    .card-contactus.title {
+        font-size: 1.3em;
+    }
+    .card-contactus.title.doadjust {
+        font-size: 1.15em;
+    }
+}
 
 @media screen and (max-width:992px) {
     a.heading {
