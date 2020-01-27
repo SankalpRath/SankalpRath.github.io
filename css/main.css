@@ -1671,6 +1671,7 @@ button.ui-button {
     }
     .card-contactus.title {
         font-size: 1.3em;
+        margin-top: calc(30vh*0.6 + 12px + 10% + 5px);
     }
     .card-contactus.title.doadjust {
         font-size: 1.25em;
