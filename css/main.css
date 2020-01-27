@@ -1088,12 +1088,12 @@ button.ui-button {
     border-right-color: rgb(244, 183, 4);
     border-bottom-color: rgb(51, 163, 81);
     border-left-color: rgb(64, 129, 237);
-    animation: wheel 4s linear infinite;
+    animation: wheel 6s linear infinite;
 }
 
 @keyframes wheel {
     0% {
-        transform: rotateZ(0deg);
+        transform: rotateZ(-360deg);
     }
     100% {
         transform: rotateZ(360deg);
@@ -1104,7 +1104,7 @@ button.ui-button {
     font-family: 'Josefin Sans', sans-serif;
     font-family: 'Concert One', cursive;
     text-align: center;
-    margin-top: calc(33vh*0.6 + 12px + 10% + 5px);
+    margin-top: calc(33vh*0.6 + 12px + 10% + 6px);
     font-size: 1.45em;
     font-weight: 500;
     color: black;
