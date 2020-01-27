@@ -20,7 +20,7 @@ $('.event-header-lbtn').click(function() {
         $n_container_id = "#" + $(".event-header-content").last().attr('id') + "-b";
 
     }
-    console.log($n_container_id);
+    //  console.log($n_container_id);
     $c_container_id = "#" + $this.attr("id") + "-b";
     $($c_container_id).toggleClass("selected");
     $($n_container_id).toggleClass("selected");
@@ -38,7 +38,7 @@ $('.event-header-rbtn').click(function() {
         $(".event-header-content").first().toggleClass("active");
         $n_container_id = "#" + $(".event-header-content").first().attr('id') + "-b";
     }
-    console.log($n_container_id);
+    // console.log($n_container_id);
     $c_container_id = "#" + $this.attr("id") + "-b";
     $($c_container_id).toggleClass("selected");
     $($n_container_id).toggleClass("selected");
@@ -65,14 +65,14 @@ $(function() {
         height: (window.innerHeight > 992) ? window.innerHeight * 0.8 : window.innerHeight * 0.7,
         width: (window.innerWidth > 992) ? window.innerWidth * 0.4 : ((window.innerWidth > 480) ? window.innerWidth * 0.65 : window.innerWidth * 0.9),
     });
-    console.log(window.innerWidth);
+    // console.log(window.innerWidth);
 
     $(".opener").click(function() {
         $dialog_id = "#" + $(this).attr('id') + "-c";
-        console.log($dialog_id);
+        //console.log($dialog_id);
         $(".dlg").dialog("close");
         $($dialog_id).dialog("open");
-        console.log("hi");
+        //   console.log("hi");
     });
 });
 

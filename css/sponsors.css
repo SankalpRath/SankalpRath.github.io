@@ -37,8 +37,10 @@
 .sponsor-image {
     position: relative;
     width: 90%;
+    height: 200px;
     left: 50%;
     top: 50%;
+    object-fit: contain;
     transform: translateX(-50%);
 }
 
