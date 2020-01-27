@@ -57,7 +57,7 @@ $(function() {
 
 
 $(document).ready(function() {
-    if ($(document).scrollTop() > (window.innerHeight * 0.15)) { // check if user scrolled more than 50 from top of the browser window
+    if ($(document).scrollTop() > (window.innerHeight * 0.07)) { // check if user scrolled more than 50 from top of the browser window
         $(".navbar").addClass("bg-info-1");
         $(".navbar").removeClass("bg-transparent"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
     } else {
@@ -68,7 +68,7 @@ $(document).ready(function() {
 
     $(window).scroll(function() { // check if scroll event happened
         //console.log("on scroll " + window.innerHeight + "/" + $(document).scrollTop() + " " + ($(document).scrollTop() > window.innerHeight));
-        if ($(document).scrollTop() > (window.innerHeight * 0.15)) { // check if user scrolled more than 50 from top of the browser window
+        if ($(document).scrollTop() > (window.innerHeight * 0.07)) { // check if user scrolled more than 50 from top of the browser window
             $(".navbar").addClass("bg-info-1");
             $(".navbar").removeClass("bg-transparent"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
         } else {

@@ -1062,22 +1062,50 @@ button.ui-button {
 }
 
 .card-contactus.image {
+    position: absolute;
     width: calc(33vh*0.6);
     height: calc(33vh*0.6);
     border-radius: 50%;
-    margin-right: 20%;
-    margin-left: 20%;
-    margin-top: 10%;
+    left: 0;
+    right: 0;
+    top: 10%;
+    margin: auto;
     object-fit: cover;
     text-align: center;
+}
+
+.card-contactus.circle {
+    position: absolute;
+    width: calc(33vh*0.6 + 12px);
+    height: calc(33vh*0.6 + 12px);
+    border-radius: 50%;
+    border: 1px solid blue;
+    left: 0;
+    right: 0;
+    top: calc(10% - 6px);
+    margin: auto;
+    border-top-color: rgb(228, 65, 52);
+    border-right-color: rgb(244, 183, 4);
+    border-bottom-color: rgb(51, 163, 81);
+    border-left-color: rgb(64, 129, 237);
+    animation: wheel 4s linear infinite;
+}
+
+@keyframes wheel {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
 }
 
 .card-contactus.title {
     font-family: 'Josefin Sans', sans-serif;
     font-family: 'Concert One', cursive;
     text-align: center;
+    margin-top: calc(33vh*0.6 + 6px + 10% + 5px);
     font-size: 1.45em;
-    margin-top: 3%;
     font-weight: 500;
     color: black;
 }
@@ -1089,6 +1117,7 @@ button.ui-button {
 .card-contactus.sub-title {
     font-family: 'Ropa Sans', sans-serif;
     text-align: center;
+    margin-top: 5px;
     font-size: 1em;
     color: #aaa;
 }
@@ -1658,6 +1687,10 @@ button.ui-button {
         height: calc(30vh*0.6);
         width: calc(30vh*0.6);
     }
+    .card-contactus.circle {
+        width: calc(30vh*0.6 + 12px);
+        height: calc(30vh*0.6 + 12px);
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -1780,6 +1813,10 @@ button.ui-button {
     .card-contactus.image {
         height: calc(30vh*0.6);
         width: calc(30vh*0.6);
+    }
+    .card-contactus.circle {
+        width: calc(30vh*0.6 + 12px);
+        height: calc(30vh*0.6 + 12px);
     }
     .contactus-content-h {
         white-space: nowrap;
