@@ -1104,7 +1104,7 @@ button.ui-button {
     font-family: 'Josefin Sans', sans-serif;
     font-family: 'Concert One', cursive;
     text-align: center;
-    margin-top: calc(33vh*0.6 + 6px + 10% + 5px);
+    margin-top: calc(33vh*0.6 + 12px + 10% + 5px);
     font-size: 1.45em;
     font-weight: 500;
     color: black;
