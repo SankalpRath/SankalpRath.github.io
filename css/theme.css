@@ -40,6 +40,8 @@ body {
     background-origin: content-box;
     background-size: cover;
     background-attachment: fixed;
+    -webkit-filter: brightness(5);
+    filter: brightness(5);
     -o-filter: brightness(3);
     -moz-filter: brightness(3);
     z-index: -1;
