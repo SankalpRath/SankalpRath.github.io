@@ -3,6 +3,10 @@
     box-sizing: border-box;
 }
 
+body {
+    transition: all 0.5s ease-out;
+}
+
 
 /* First lets set a background */
 
@@ -13,10 +17,10 @@
     width: 100%;
     height: 100%;
     opacity: 0.5;
-    background: url('../images/wizard_bg.jpg');
+    background: url('../images/d_theme.jpg');
     background-position: center center;
     background-origin: content-box;
-    background-size: cover;
+    background-size: contain;
     background-attachment: fixed;
     z-index: -2;
 }
@@ -30,10 +34,11 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('../images/wizard_bg.jpg');
+    background: url('../images/d_theme.jpg');
     background-position: center center;
+    background-repeat: no-repeat;
     background-origin: content-box;
-    background-size: cover;
+    background-size: contain;
     background-attachment: fixed;
     -webkit-filter: brightness(3);
     filter: brightness(3);
@@ -102,7 +107,7 @@
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(17, 1, 1, 0.7);
     border-radius: 20px;
     padding: 4% 10% 5% 10%;
     margin-top: 10%;
@@ -140,6 +145,43 @@
     color: azure;
     text-align: justify;
     text-indent: 10%;
+}
+
+.sidenavbar {
+    position: fixed;
+    height: 100%;
+    min-height: 100vh;
+    width: 250px;
+    overflow: hidden;
+    background: rgb(0, 0, 37);
+    z-index: 99;
+    top: 0;
+    left: -250px;
+    transition: all 0.5s ease-out;
+}
+
+.sidenavbar ul {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.sidenavbar li {
+    display: block;
+    /* border-top: 1px solid rgb(0, 4, 235);
+    border-bottom: 1px solid rgb(130, 130, 255); */
+}
+
+.sidenavbar li a {
+    display: block;
+    padding: 15px 10px 15px 60px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s ease;
+}
+
+.sidenavbar li:hover a {
+    background: rgb(155, 155, 255);
+    margin-left: 30px;
 }
 
 
