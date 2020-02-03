@@ -20,7 +20,7 @@ body {
     background: url('../images/d_theme.jpg');
     background-position: center center;
     background-origin: content-box;
-    background-size: contain;
+    background-size: cover;
     background-attachment: fixed;
     z-index: -2;
 }
@@ -38,10 +38,8 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
     background-origin: content-box;
-    background-size: contain;
+    background-size: cover;
     background-attachment: fixed;
-    -webkit-filter: brightness(3);
-    filter: brightness(3);
     -o-filter: brightness(3);
     -moz-filter: brightness(3);
     z-index: -1;
