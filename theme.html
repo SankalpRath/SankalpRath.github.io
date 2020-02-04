@@ -9,15 +9,27 @@
     <title>Theme | Technovation 2020</title>
 
     <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script>
         function openNav() {
-            document.getElementById('sidenavbar').style.left = 0;
-            document.body.style.marginLeft = '250px';
+            if (screen.width > 520) {
+                document.getElementById('sidenavbar').style.left = 0;
+                document.body.style.marginLeft = '300px';
+            } else {
+                document.getElementById('sidenavbar').style.width = '80%';
+                document.getElementById('sidenavbar').style.left = 0;
+            }
+
         }
 
         function closeNav() {
-            document.getElementById('sidenavbar').style.left = '-250px';
-            document.body.style.marginLeft = '0px';
+            if (screen.width > 520) {
+                document.getElementById('sidenavbar').style.left = '-300px';
+                document.body.style.marginLeft = '0px';
+            } else {
+                document.getElementById('sidenavbar').style.width = '300px';
+                document.getElementById('sidenavbar').style.left = '-300px';
+            }
         }
     </script>
 </head>
@@ -25,35 +37,37 @@
 <body bgcolor="black">
     <div class="sidenavbar" id="sidenavbar">
 
-        <div onclick="closeNav();" style="background:rgba(0,0,0,0.4);cursor:pointer;color:white;font-size:2.3em;width: 40px;height:40px;margin-top:30px;margin-left:200px;text-align:center;">&times;</div>
+        <div onclick="closeNav();" style="background:rgba(0,0,0,0.4);cursor:pointer;color:white;font-size:2.3em;width: 40px;height:40px;margin-top:30px;margin-left:70%;text-align:center;">&times;</div>
         <ul>
             <li>
-                <a href="javascript:void(0)">Home</a>
+                <a href="./index.html"> <i class="fa fa-home fa-icon"></i> Home</a>
             </li>
             <li>
-                <a href="javascript:void(0)">Events</a>
+                <a href="./events.html"><i class="fa fa-calendar fa-icon"></i> Events</a>
             </li>
             <li>
-                <a href="javascript:void(0)">Gallery</a>
+                <a href="./gallery.html"><i class="fa fa-picture-o fa-icon"></i> Gallery</a>
             </li>
             <li>
-                <a href="javascript:void(0)">Sponsors</a>
+                <a href="./sponsor.html"><i class="fa fa-handshake-o fa-icon"></i> Sponsors</a>
             </li>
             <li>
-                <a href="javascript:void(0)">Contact Us</a>
+                <a href="./contactus.html"><i class="fa fa-users fa-icon"></i> Contact Us</a>
             </li>
         </ul>
     </div>
-    <div style="font-size: 2.3em;margin:60px 60px;color:white;cursor:pointer;" onclick="openNav();">&#9776;</div>
+    <div style="font-size: 2.3em;margin:60px 60px;color:white;cursor:pointer;width: 50px;height: 50px;text-align: center;" onclick="openNav();">&#9776;</div>
     <!-- <div style="width: 100vw;height:100vh;background:url('images/wizard_bg.jpg');background-size:cover;background-position:0 0;opacity:0.7;"> -->
     <div class="bg"></div>
-    <audio loop id="thunder-audio">
-        <source src="./media/Thunde.mp3" type="audio/mpeg">
+
+    <audio loop autoplay>
+        <source src="./media/Thunder.mp3" type="audio/mpeg">
     </audio>
     <div class="lightning flashit"></div>
 
     <div class="container-fluid">
         <div class="theme-heading-card-1">
+            <img class="wizard-logo" src="images/wizard-logo.png"></img>
             <div class="theme-heading">
                 THEME
             </div>
@@ -62,6 +76,7 @@
                     hgkjvkjhxdhvbchxjhbkj ihvidizh giidhzsiughv d fgiu dius hiug hiuadhui ahghdia adgio iodjigj iadjiog hiohdsihioghd ihgisiodhgiohaiod giohahdighiodhghahishegio gh ehiogha ehgea hg etiug eai oi hp whrpr qwprha wht aeog e
                 </p>
             </div>
+
         </div>
 
     </div>
@@ -116,9 +131,15 @@
     </div>
 
 
-
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script>
-        document.getElementById("thunder-audio").play();
+        var audio = new Audio('./media/Thunder.mp3');
+        audio.play();
     </script>
     <!-- <script type='text/javascript' src='http://getfirebug.com/releases/lite/1.2/firebug-lite-compressed.js'></script> -->
 </body>

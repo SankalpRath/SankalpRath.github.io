@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Nosifer&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lalezar&display=swap');
 * {
     box-sizing: border-box;
 }
@@ -21,7 +22,6 @@ body {
     background-position: center center;
     background-origin: content-box;
     background-size: cover;
-    background-attachment: fixed;
     z-index: -2;
 }
 
@@ -40,8 +40,9 @@ body {
     background-origin: content-box;
     background-size: cover;
     background-attachment: fixed;
-    -webkit-filter: brightness(5);
-    filter: brightness(5);
+    opacity: 0;
+    -webkit-filter: brightness(4);
+    filter: brightness(4);
     -o-filter: brightness(3);
     -moz-filter: brightness(3);
     z-index: -1;
@@ -107,7 +108,7 @@ body {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    background: rgba(17, 1, 1, 0.7);
+    background: rgba(0, 0, 0, 0.7);
     border-radius: 20px;
     padding: 4% 10% 5% 10%;
     margin-top: 10%;
@@ -133,7 +134,7 @@ body {
     font-family: 'Nosifer', cursive;
     letter-spacing: 5px;
     margin-bottom: 5%;
-    background: linear-gradient(to bottom, white, white 50%, red 63%);
+    background: linear-gradient(to bottom, white, white 50%, #720800 60%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -147,16 +148,23 @@ body {
     text-indent: 10%;
 }
 
+.wizard-logo {
+    position: absolute;
+    right: 0;
+    top: -50%;
+    z-index: -3;
+}
+
 .sidenavbar {
     position: fixed;
     height: 100%;
     min-height: 100vh;
-    width: 250px;
+    width: 300px;
     overflow: hidden;
     background: rgb(0, 0, 37);
     z-index: 99;
     top: 0;
-    left: -250px;
+    left: -300px;
     transition: all 0.5s ease-out;
 }
 
@@ -175,6 +183,8 @@ body {
     display: block;
     padding: 15px 10px 15px 60px;
     text-decoration: none;
+    font-family: 'Lalezar', cursive;
+    font-size: 1.5em;
     color: white;
     transition: all 0.5s ease;
 }
@@ -182,6 +192,10 @@ body {
 .sidenavbar li:hover a {
     background: rgb(155, 155, 255);
     margin-left: 30px;
+}
+
+.fa-icon {
+    margin-right: 10px;
 }
 
 
@@ -303,6 +317,9 @@ body {
 /* Media queries - Responsive timeline on screens less than 600px wide */
 
 @media screen and (max-width: 600px) {
+    .wizard-logo {
+        display: none;
+    }
     .theme-heading-card-2 {
         padding: 4% 0 5% 0;
         width: 95%;
