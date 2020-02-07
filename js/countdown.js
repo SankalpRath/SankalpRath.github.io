@@ -1,9 +1,15 @@
-(function () {
+(function() {
     var COLORS, Confetti, NUM_CONFETTI, PI_2, canvas, confetti, context, drawCircle, i, range, resizeWindow, xpos;
 
     NUM_CONFETTI = 350;
 
-    COLORS = [[85, 71, 106], [174, 61, 99], [219, 56, 83], [244, 92, 68], [248, 182, 70]];
+    COLORS = [
+        [85, 71, 106],
+        [174, 61, 99],
+        [219, 56, 83],
+        [244, 92, 68],
+        [248, 182, 70]
+    ];
 
     PI_2 = 2 * Math.PI;
 
@@ -13,22 +19,22 @@
     window.w = 0;
     window.h = 0;
 
-    resizeWindow = function () {
+    resizeWindow = function() {
         window.w = canvas.width = window.innerWidth;
         return window.h = canvas.height = window.innerHeight;
     };
 
     window.addEventListener('resize', resizeWindow, false);
 
-    window.onload = function () {
+    window.onload = function() {
         return setTimeout(resizeWindow, 0);
     };
 
-    range = function (a, b) {
+    range = function(a, b) {
         return (b - a) * Math.random() + a;
     };
 
-    drawCircle = function (x, y, r, style) {
+    drawCircle = function(x, y, r, style) {
         context.beginPath();
         context.arc(x, y, r, 0, PI_2, false);
         context.fillStyle = style;
@@ -37,17 +43,17 @@
 
     xpos = 0.4;
 
-    document.onmousemove = function (e) {
+    document.onmousemove = function(e) {
         return xpos = e.pageX / w;
     };
 
-    window.requestAnimationFrame = (function () {
-        return window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame || function (callback) {
+    window.requestAnimationFrame = (function() {
+        return window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame || function(callback) {
             return window.setTimeout(callback, 1000 / 60);
         };
     })();
 
-    Confetti = (function () {
+    Confetti = (function() {
         function Confetti() {
             this.style = COLORS[~~range(0, 5)];
             this.rgb = "rgba(" + this.style[0] + "," + this.style[1] + "," + this.style[2];
@@ -56,7 +62,7 @@
             this.replace();
         }
 
-        Confetti.prototype.replace = function () {
+        Confetti.prototype.replace = function() {
             this.opacity = 0;
             this.dop = 0.03 * range(1, 4);
             this.x = range(-this.r2, w - this.r2);
@@ -67,7 +73,7 @@
             return this.vy = 0.7 * this.r + range(-1, 1);
         };
 
-        Confetti.prototype.draw = function () {
+        Confetti.prototype.draw = function() {
             var _ref;
             this.x += this.vx;
             this.y += this.vy;
@@ -89,7 +95,7 @@
 
     })();
 
-    confetti = (function () {
+    confetti = (function() {
         var _i, _results;
         _results = [];
         for (i = _i = 1; 1 <= NUM_CONFETTI ? _i <= NUM_CONFETTI : _i >= NUM_CONFETTI; i = 1 <= NUM_CONFETTI ? ++_i : --_i) {
@@ -98,7 +104,7 @@
         return _results;
     })();
 
-    window.step = function () {
+    window.step = function() {
         var c, _i, _len, _results;
         requestAnimationFrame(step);
         context.clearRect(0, 0, w, h);
@@ -125,9 +131,9 @@ var interval = 10000;
 var trigger_count = 0;
 var trigger_timeout = null;
 
-$(document).ready(function () {
+$(document).ready(function() {
     var currentDate = new Date();
-    var futureDate = new Date("30 Jan 2020");
+    var futureDate = new Date("15 Feb 2020");
     console.log(futureDate);
     var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
 
@@ -138,7 +144,7 @@ $(document).ready(function () {
         clockFace: 'DailyCounter',
         countdown: true,
         callbacks: {
-            interval: function () {
+            interval: function() {
                 var time = this.factory.getTime().time;
 
                 if (time === 10) {
@@ -147,19 +153,18 @@ $(document).ready(function () {
 
                 if (time <= 10 && time > 0) {
                     pulse();
-                }
-                else if (time <= 0) {
+                } else if (time <= 0) {
                     celebrate();
                 }
             }
         }
     });
 
-    $('.wrapper').click(function () {
+    $('.wrapper').click(function() {
         trigger_count++;
 
         clearTimeout(trigger_timeout);
-        trigger_timeout = setTimeout(function () {
+        trigger_timeout = setTimeout(function() {
             trigger_count = 0;
         }, 500);
 
@@ -176,7 +181,7 @@ function celebrate() {
     $clock.addClass('animated flipOutX');
 
     clearTimeout(timeout);
-    setTimeout(function () {
+    setTimeout(function() {
         $message.addClass('animated flipInX').fadeIn();
         timeout = setTimeout(bounce, interval);
     }, 350);
@@ -188,7 +193,7 @@ function pulse() {
     $clock.removeClass('animated flipInX flipOutX pulse');
 
     clearTimeout(timeout);
-    timeout = setTimeout(function () {
+    timeout = setTimeout(function() {
         $clock.addClass('animated pulse');
     }, 50);
 }
@@ -198,7 +203,7 @@ function bounce() {
 
     $message.removeClass('animated bounce flipInX pulse rubberBand swing tada');
 
-    setTimeout(function () {
+    setTimeout(function() {
         $message.addClass('animated ' + animations[current_animation]);
         current_animation++;
         if (current_animation == animations.length) {
