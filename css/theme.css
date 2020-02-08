@@ -134,7 +134,7 @@ body {
     font-family: 'Nosifer', cursive;
     letter-spacing: 5px;
     margin-bottom: 5%;
-    background: linear-gradient(to bottom, white, white 50%, #d10000 60%);
+    background: linear-gradient(to bottom, white, white 40%, #d10000 60%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -162,7 +162,7 @@ body {
     min-height: 100vh;
     width: 300px;
     overflow: hidden;
-    background: rgb(0, 0, 37);
+    background: rgba(0, 0, 0, 0.7);
     z-index: 99;
     top: 0;
     left: -300px;
@@ -191,7 +191,7 @@ body {
 }
 
 .sidenavbar li:hover a {
-    background: rgb(155, 155, 255);
+    background: rgba(255, 0, 0, 0.7);
     margin-left: 30px;
 }
 
