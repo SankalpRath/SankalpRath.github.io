@@ -423,17 +423,30 @@ a {
 /*Message Box*/
 
 .msg {
-    background: linear-gradient(to right bottom, #80DEEA, blue);
+    background: linear-gradient(to right bottom, #03a9f4, blue);
     border-radius: 20px;
     height: auto;
     width: 70%;
 }
 
 .msg-title {
+    position: relative;
     font-family: 'Oswald', sans-serif;
     font-size: 2.4em;
     padding: 4% 2%;
-    text-decoration: underline;
+    /* text-decoration: underline; */
+}
+
+.msg-title::after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 80%;
+    margin: auto;
+    content: '';
+    height: 2px;
+    width: 60%;
+    background: white;
 }
 
 .msg-body {
@@ -441,7 +454,8 @@ a {
     font-family: 'Tangerine', cursive;
     font-weight: 400;
     font-size: 2.3em;
-    padding: 0 5% 5% 5%;
+    text-indent: 10%;
+    padding: 5% 5% 5% 5%;
 }
 
 .msg-body span {
@@ -750,7 +764,7 @@ div.text {
     width: 100%;
     -webkit-clip-path: polygon(16% 1%, 99.375% 1%, 99.375% 74.5%, 84% 99%, 0.625% 99%, 0.625% 25.5%);
     clip-path: polygon(16% 1%, 99.375% 1%, 99.375% 74.5%, 84% 99%, 0.625% 99%, 0.625% 25.5%);
-    background-color: red;
+    background-color: white;
 }
 
 .event-card .item6 {
@@ -808,7 +822,7 @@ div.text {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: url('../images/bg.png');
+    /* background: url('../images/bg.png'); */
     object-fit: cover;
     background-size: contain;
 }
@@ -1770,11 +1784,14 @@ button.ui-button {
     .msg-title {
         font-size: 1.5em;
     }
+    .msg-title::after {
+        top: 90%;
+    }
     .msg-body {
         font-size: 1.4em;
         /* text-align: left; */
-        padding: 0 10% 15% 10%;
-        text-indent: 15%;
+        padding: 5% 10% 15% 10%;
+        text-indent: 5%;
     }
     .faq-content-h {
         text-align: center;
