@@ -42,7 +42,7 @@ section:nth-child(1) {
     }
     16%,
     30% {
-        background: url("../images/gallery_images/img2.png") 0% 0%;
+        background: url("../images/gallery_images/img2.jpg") 0% 0%;
         -webkit-clip-path: polygon(95% 10%, 100% 80%, 62% 77%, 45% 12%);
     }
     33%,
@@ -76,7 +76,7 @@ section:nth-child(1) {
     }
     16%,
     30% {
-        background: url("../images/gallery_images/img2.png") 0% 0%;
+        background: url("../images/gallery_images/img2.jpg") 0% 0%;
         -webkit-clip-path: polygon(95% 10%, 100% 80%, 62% 77%, 45% 12%);
     }
     33%,
@@ -110,7 +110,7 @@ section:nth-child(1) {
     }
     16%,
     30% {
-        background: url("../images/gallery_images/img2.png") 0% 0%;
+        background: url("../images/gallery_images/img2.jpg") 0% 0%;
         -webkit-clip-path: polygon(95% 10%, 100% 80%, 62% 77%, 45% 12%);
     }
     33%,
@@ -150,7 +150,7 @@ section:nth-child(2) {
     }
     16%,
     30% {
-        background: url("../images/gallery_images/img2.png") 33.33333% 0%;
+        background: url("../images/gallery_images/img2.jpg") 33.33333% 0%;
         -webkit-clip-path: polygon(100% 3%, 95% 95%, 5% 90%, 0% 5%);
     }
     33%,
@@ -184,7 +184,7 @@ section:nth-child(2) {
     }
     16%,
     30% {
-        background: url("../images/gallery_images/img2.png") 33.33333% 0%;
+        background: url("../images/gallery_images/img2.jpg") 33.33333% 0%;
         -webkit-clip-path: polygon(100% 3%, 95% 95%, 5% 90%, 0% 5%);
     }
     33%,
@@ -218,7 +218,7 @@ section:nth-child(2) {
     }
     16%,
     30% {
-        background: url("../images/gallery_images/img2.png") 33.33333% 0%;
+        background: url("../images/gallery_images/img2.jpg") 33.33333% 0%;
         -webkit-clip-path: polygon(100% 3%, 95% 95%, 5% 90%, 0% 5%);
     }
     33%,
@@ -258,7 +258,7 @@ section:nth-child(3) {
     }
     16%,
     30% {
-        background: url("../images/gallery_images/img2.png") 66.66666% 0%;
+        background: url("../images/gallery_images/img2.jpg") 66.66666% 0%;
         -webkit-clip-path: polygon(100% 14%, 95% 84%, 0% 91%, 5% 7%);
     }
     33%,
@@ -292,7 +292,7 @@ section:nth-child(3) {
     }
     16%,
     30% {
-        background: url("../images/gallery_images/img2.png") 66.66666% 0%;
+        background: url("../images/gallery_images/img2.jpg") 66.66666% 0%;
         -webkit-clip-path: polygon(100% 14%, 95% 84%, 0% 91%, 5% 7%);
     }
     33%,
@@ -326,7 +326,7 @@ section:nth-child(3) {
     }
     16%,
     30% {
-        background: url("../images/gallery_images/img2.png") 66.66666% 0%;
+        background: url("../images/gallery_images/img2.jpg") 66.66666% 0%;
         -webkit-clip-path: polygon(100% 14%, 95% 84%, 0% 91%, 5% 7%);
     }
     33%,
@@ -366,7 +366,7 @@ section:nth-child(4) {
     }
     16%,
     30% {
-        background: url("../images/gallery_images/img2.png") 99.99999% 0%;
+        background: url("../images/gallery_images/img2.jpg") 99.99999% 0%;
         -webkit-clip-path: polygon(57% 31%, 45% 67%, 0% 77%, 5% 18%);
     }
     33%,
@@ -400,7 +400,7 @@ section:nth-child(4) {
     }
     16%,
     30% {
-        background: url("../images/gallery_images/img2.png") 99.99999% 0%;
+        background: url("../images/gallery_images/img2.jpg") 99.99999% 0%;
         -webkit-clip-path: polygon(57% 31%, 45% 67%, 0% 77%, 5% 18%);
     }
     33%,
@@ -434,7 +434,7 @@ section:nth-child(4) {
     }
     16%,
     30% {
-        background: url("../images/gallery_images/img2.png") 99.99999% 0%;
+        background: url("../images/gallery_images/img2.jpg") 99.99999% 0%;
         -webkit-clip-path: polygon(57% 31%, 45% 67%, 0% 77%, 5% 18%);
     }
     33%,
@@ -478,5 +478,5 @@ section:nth-child(4) {
 .ball {
     position: absolute;
     border-radius: 100%;
-    opacity: 0.7;
+    opacity: 0.5;
 }
