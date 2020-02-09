@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Fondamento&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Srisakdi&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Crimson+Text&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Forum&display=swap');
 body {
     position: absolute;
     width: 100%;
@@ -42,8 +43,9 @@ body {
     font-weight: 700;
 }
 
-
-/* .dev.content {} */
+.dev.content {
+    font-family: 'Forum', cursive;
+}
 
 .bg-info-1 {
     background: rgb(10, 10, 10);
