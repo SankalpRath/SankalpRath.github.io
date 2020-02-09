@@ -112,8 +112,8 @@ body {
 
 .logo {
     position: absolute;
-    height: 50%;
-    width: 50%;
+    height: 42%;
+    width: 42%;
     left: 0;
     right: 0;
     top: 0;
@@ -122,7 +122,7 @@ body {
     text-align: center;
     align-items: center;
     background-color: yellow;
-    background: url("../images/tech.png") no-repeat;
+    background: url("../images/tech2.png") no-repeat;
     background-size: contain;
     background-position: center;
     transform: scale(1.5, 1.5);
@@ -423,7 +423,7 @@ a {
 /*Message Box*/
 
 .msg {
-    background: linear-gradient(to right bottom, rgb(138, 218, 250), blue);
+    background: linear-gradient(to right bottom, #80DEEA, blue);
     border-radius: 20px;
     height: auto;
     width: 70%;
