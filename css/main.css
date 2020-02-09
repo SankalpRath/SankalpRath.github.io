@@ -428,6 +428,7 @@ a {
     background: linear-gradient(to right bottom, #03a9f4, blue);
     border-radius: 20px;
     height: auto;
+    opacity: 0.9;
     width: 70%;
 }
 
