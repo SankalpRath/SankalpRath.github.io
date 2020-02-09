@@ -1783,7 +1783,11 @@ button.ui-button {
     .brochure {
         font-size: 1em;
     }
+    .msg {
+        width: 85%;
+    }
     .msg-title {
+        padding-top: 8%;
         font-size: 1.5em;
     }
     .msg-title::after {
