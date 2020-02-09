@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Tangerine&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fondamento&display=swap');
 body {
     position: absolute;
     width: 100%;
@@ -431,11 +433,21 @@ a {
     font-family: 'Oswald', sans-serif;
     font-size: 2.4em;
     padding: 4% 2%;
+    text-decoration: underline;
 }
 
 .msg-body {
-    font-size: 1.3em;
+    /* font-family: 'Srisakdi', cursive; */
+    font-family: 'Tangerine', cursive;
+    font-weight: 400;
+    font-size: 2.3em;
     padding: 0 5% 5% 5%;
+}
+
+.msg-body span {
+    font-family: 'Fondamento', cursive;
+    font-size: 0.7em;
+    font-style: italic;
 }
 
 
@@ -803,7 +815,20 @@ div.text {
 
 .event {
     display: none;
-    animation: fadeInUp 2s ease;
+    animation: fadeInUp-c1 1s ease-out;
+}
+
+@keyframes fadeInUp-c1 {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 20%, 0);
+        transform: translate3d(0, 15%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
 }
 
 .event.selected {
@@ -1746,7 +1771,10 @@ button.ui-button {
         font-size: 1.5em;
     }
     .msg-body {
-        font-size: 1em;
+        font-size: 1.4em;
+        /* text-align: left; */
+        padding: 0 10% 15% 10%;
+        text-indent: 15%;
     }
     .faq-content-h {
         text-align: center;

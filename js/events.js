@@ -5,7 +5,7 @@ $(window).bind("load", function() {
 
 });
 
-
+// Change event type
 $('.event-header-lbtn').click(function() {
 
     $this = $('.event-header-content.active');
