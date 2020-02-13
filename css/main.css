@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Srisakdi&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Crimson+Text&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Forum&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Philosopher&display=swap');
 body {
     position: absolute;
     width: 100%;
@@ -961,6 +962,8 @@ button.ui-button {
 }
 
 .para-dlg-2 {
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 100;
     padding: 2% 4% 2% 4%;
     text-indent: 5%;
     text-align: justify;
