@@ -1702,8 +1702,8 @@ button.ui-button {
         font-size: 1em;
     }
     .event-card {
-        width: 40vh;
-        height: 25vh;
+        width: 41vh;
+        height: 27vh;
     }
     .social-circle li a {
         width: 35px;
@@ -1715,26 +1715,26 @@ button.ui-button {
     }
     .card-contactus.title {
         font-size: 1.3em;
-        margin-top: calc(30vh*0.6 + 12px + 10% + 5px);
+        margin-top: calc(33vh*0.6 + 12px + 10% + 5px);
     }
     .card-contactus.title.doadjust {
-        font-size: 1.25em;
+        font-size: 1.1em;
     }
     .card-contactus.sub-title {
         font-size: 0.8em;
     }
     /*card contacts*/
     .card-contact-us {
-        height: 40vh;
+        height: 42vh;
         width: 30vh;
     }
     .card-contactus.image {
-        height: calc(30vh*0.6);
-        width: calc(30vh*0.6);
+        height: calc(33vh*0.6);
+        width: calc(33vh*0.6);
     }
     .card-contactus.circle {
-        width: calc(30vh*0.6 + 12px);
-        height: calc(30vh*0.6 + 12px);
+        width: calc(33vh*0.6 + 12px);
+        height: calc(33vh*0.6 + 12px);
     }
 }
 
@@ -1862,16 +1862,16 @@ button.ui-button {
         font-size: 1.6em;
     }
     .card-contact-us {
-        height: 41vh;
-        width: 30vh;
+        height: 42vh;
+        width: 31vh;
     }
     .card-contactus.image {
-        height: calc(30vh*0.6);
-        width: calc(30vh*0.6);
+        height: calc(33vh*0.6);
+        width: calc(33vh*0.6);
     }
     .card-contactus.circle {
-        width: calc(30vh*0.6 + 12px);
-        height: calc(30vh*0.6 + 12px);
+        width: calc(33vh*0.6 + 12px);
+        height: calc(33vh*0.6 + 12px);
     }
     .contactus-content-h {
         white-space: nowrap;
