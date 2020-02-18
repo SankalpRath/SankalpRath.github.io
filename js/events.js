@@ -62,7 +62,7 @@ $(function() {
             // resulting in the label being used as a tooltip
             //showText: false
         }],
-        height: (window.innerHeight > 992) ? window.innerHeight * 0.8 : window.innerHeight * 0.7,
+        height: (window.innerHeight > 992) ? window.innerHeight * 0.8 : window.innerHeight * 0.75,
         width: (window.innerWidth > 992) ? window.innerWidth * 0.4 : ((window.innerWidth > 480) ? window.innerWidth * 0.65 : window.innerWidth * 0.9),
     });
     // console.log(window.innerWidth);
