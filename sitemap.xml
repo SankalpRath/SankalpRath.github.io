@@ -1,44 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-		<!--	created with www.mysitemapgenerator.com	-->
-		<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<urlset
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	  	  
+<!-- www.check-domains.com sitemap generator -->
+
 <url>
-	<loc>https://www.igittechnovation.co.in/</loc>
-	<lastmod>2020-01-23T06:13:14+01:00</lastmod>
-	<priority>1.0</priority>
+   <loc>https://www.igittechnovation.co.in/</loc>
+   <lastmod>2020-02-18T05:55:24+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>1.0000</priority>
 </url>
 <url>
-	<loc>https://www.igittechnovation.co.in/index.html</loc>
-	<lastmod>2020-01-23T06:13:15+01:00</lastmod>
-	<priority>1.0</priority>
+   <loc>https://www.igittechnovation.co.in/index.html</loc>
+   <lastmod>2020-02-18T05:55:24+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.8000</priority>
 </url>
 <url>
-	<loc>https://www.igittechnovation.co.in/events.html</loc>
-	<lastmod>2020-01-23T06:13:18+01:00</lastmod>
-	<priority>1.0</priority>
+   <loc>https://www.igittechnovation.co.in/events.html</loc>
+   <lastmod>2020-02-18T05:55:24+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.8000</priority>
 </url>
 <url>
-	<loc>https://www.igittechnovation.co.in/gallery.html</loc>
-	<lastmod>2020-01-23T06:13:18+01:00</lastmod>
-	<priority>1.0</priority>
+   <loc>https://www.igittechnovation.co.in/gallery.html</loc>
+   <lastmod>2020-02-18T05:55:24+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.8000</priority>
 </url>
 <url>
-	<loc>https://www.igittechnovation.co.in/faqs.html</loc>
-	<lastmod>2020-01-23T06:13:18+01:00</lastmod>
-	<priority>1.0</priority>
+   <loc>https://www.igittechnovation.co.in/sponsor.html</loc>
+   <lastmod>2020-02-18T05:55:24+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.8000</priority>
 </url>
 <url>
-	<loc>https://www.igittechnovation.co.in/sponsor.html</loc>
-	<lastmod>2020-01-23T06:13:21+01:00</lastmod>
-	<priority>1.0</priority>
+   <loc>https://www.igittechnovation.co.in/contactus.html</loc>
+   <lastmod>2020-02-18T05:55:24+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.8000</priority>
 </url>
 <url>
-	<loc>https://www.igittechnovation.co.in/contactus.html</loc>
-	<lastmod>2020-01-23T06:13:18+01:00</lastmod>
-	<priority>1.0</priority>
+   <loc>https://www.igittechnovation.co.in/index-fut.html</loc>
+   <lastmod>2020-02-18T05:55:24+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.8000</priority>
 </url>
 <url>
-	<loc>https://www.igittechnovation.co.in/media/Brochure_Technovation_2020.pdf</loc>
-	<lastmod>2020-01-23T06:13:19+01:00</lastmod>
-	<priority>0.8</priority>
+   <loc>https://www.igittechnovation.co.in/media/Brochure_Technovation_2020.pdf</loc>
+   <lastmod>2020-02-18T12:31:53+00:00</lastmod>
+   <changefreq>monthly</changefreq>
+   <priority>0.8000</priority>
 </url>
 </urlset>
