@@ -133,7 +133,7 @@ var trigger_timeout = null;
 
 $(document).ready(function() {
     var currentDate = new Date();
-    var futureDate = new Date("21 Feb 2020 23:59:59");
+    var futureDate = new Date("29 Feb 2020 23:59:59");
     console.log(futureDate);
     var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
 
