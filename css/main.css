@@ -1819,6 +1819,9 @@ button.ui-button {
         width: 100%;
         height: 400px;
     }
+    .item5 .item10 {
+        font-size: 1.15em;
+    }
 }
 
 @media screen and (max-width:480px) {
