@@ -179,6 +179,60 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
+.theme-heading-tx1 {
+    width: 100%;
+    height: auto;
+    margin-top: -5%;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    /* font-family: 'Nosifer', cursive; */
+    font-family: 'fairies';
+    letter-spacing: 5px;
+    margin-bottom: 5%;
+    background: linear-gradient(to bottom, white, white 40%, #d10000 70%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: none;
+}
+
+.theme-heading-tx2 {
+    width: 100%;
+    height: auto;
+    margin-top: -5%;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    /* font-family: 'Nosifer', cursive; */
+    font-family: 'fairies';
+    letter-spacing: 5px;
+    margin-bottom: 5%;
+    background: linear-gradient(to bottom, white, white 40%, #d10000 70%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: none;
+}
+
+.theme-heading-tx3 {
+    width: 100%;
+    height: auto;
+    margin-top: -5%;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    /* font-family: 'Nosifer', cursive; */
+    font-family: 'fairies';
+    letter-spacing: 5px;
+    margin-bottom: 5%;
+    background: linear-gradient(to bottom, white, white 40%, #d10000 70%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: none;
+}
+
 .theme-content {
     width: 100%;
     font-size: 1.5em;
@@ -372,7 +426,18 @@ body {
         font-size: 1.5em;
     }
     .theme-heading-text {
-        font-size: 2em;
+        display: none;
+    }
+    .theme-heading-tx1 {
+        text-align: left;
+        display: inline-block;
+    }
+    .theme-heading-tx3 {
+        text-align: right;
+        display: inline-block;
+    }
+    .theme-heading-tx2 {
+        display: inline-block;
     }
     .theme-content {
         font-size: 1em;
