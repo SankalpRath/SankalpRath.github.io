@@ -100,6 +100,37 @@ body {
     }
 }
 
+.rotating-power-wheel {
+    position: relative;
+    height: 50vh;
+    width: 50vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-size: contain;
+    z-index: -1;
+    /* background-position: 50% 50%; */
+}
+
+.power-wheel {
+    position: relative;
+    margin-top: -25%;
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    animation: rotate360 4s linear infinite;
+    -webkit-animation: rotate360 4s linear infinite;
+}
+
+@keyframes rotate360 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 
 /*End! is that simple! */
 
@@ -110,8 +141,8 @@ body {
     transform: translateX(-50%);
     background: rgba(0, 0, 0, 0.7);
     border-radius: 20px;
-    padding: 4% 10% 5% 10%;
-    margin-top: 10%;
+    /* padding: 4% 10% 5% 10%;
+    margin-top: 10%; */
 }
 
 .theme-heading-card-2 {
@@ -129,12 +160,20 @@ body {
     width: 100%;
     height: auto;
     color: white;
+}
+
+.theme-heading-text {
+    width: 100%;
+    height: auto;
+    margin-top: -5%;
+    color: white;
     text-align: center;
-    font-size: 2.5em;
-    font-family: 'Nosifer', cursive;
+    font-size: 5.5em;
+    /* font-family: 'Nosifer', cursive; */
+    font-family: 'fairies';
     letter-spacing: 5px;
     margin-bottom: 5%;
-    background: linear-gradient(to bottom, white, white 40%, #d10000 60%);
+    background: linear-gradient(to bottom, white, white 40%, #d10000 70%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -321,12 +360,19 @@ body {
     .wizard-logo {
         display: none;
     }
+    .rotating-power-wheel {
+        width: 70vw;
+        height: 70vw;
+    }
     .theme-heading-card-2 {
         padding: 4% 0 5% 0;
         width: 95%;
     }
     .theme-heading {
         font-size: 1.5em;
+    }
+    .theme-heading-text {
+        font-size: 2em;
     }
     .theme-content {
         font-size: 1em;

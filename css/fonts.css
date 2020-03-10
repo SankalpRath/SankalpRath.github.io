@@ -27,3 +27,8 @@
     font-family: 'product sans italic';
     src: url('fonts/Product\ Sans\ Italic.ttf');
 }
+
+@font-face {
+    font-family: 'fairies';
+    src: url('fonts/FairiesGoneWild.otf');
+}
