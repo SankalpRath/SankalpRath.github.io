@@ -1618,6 +1618,41 @@ button.ui-button {
 /*      End -------------------- */
 
 
+/*  Event Date Time Changer */
+
+.headtext {
+    font-size: 100%;
+    animation-name: head;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+#text2 {
+    animation-delay: 3s;
+}
+
+@keyframes head {
+    0% {
+        font-size: 100%;
+        opacity: 1;
+        height: 100%;
+    }
+    50% {
+        font-size: 100%;
+        opacity: 0;
+        height: 0;
+    }
+    100% {
+        font-size: 100%;
+        opacity: 1;
+        height: 100%;
+    }
+}
+
+
+/*  -------------End---------------- */
+
+
 /*.logo:hover {
         visibility: hidden;
     }*/
