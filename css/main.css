@@ -1623,25 +1623,28 @@ button.ui-button {
 .headtext {
     font-size: 100%;
     animation-name: head;
-    animation-duration: 6s;
+    animation-duration: 8s;
     animation-iteration-count: infinite;
 }
 
 #text2 {
-    animation-delay: 3s;
+    animation-delay: 4s;
 }
 
 @keyframes head {
-    0% {
+    0%,
+    25% {
         font-size: 100%;
         opacity: 1;
         height: 100%;
     }
+    25%,
     50% {
         font-size: 100%;
         opacity: 0;
         height: 0;
     }
+    75%,
     100% {
         font-size: 100%;
         opacity: 1;
